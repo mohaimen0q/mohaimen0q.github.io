@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins';
+}
+:root{
+    --background:rgb(24,24,24);
+    --second-background:rgb(21,21,21);
+}
+body{
+    min-height: 100vh;
+    background-color: var(--background);
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2em 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(15, 15, 15, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+nav ul a{
+    color: white;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+}
+nav ul a:hover{
+    opacity: 1;
+}
+.logo{
+    font-size: 2em;
+    font-weight: 800;
+    color: linear-gradient(to right, #6cff52, #3ec5ff);
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+.logo:hover{
+    opacity: 1;
+}
+span{
+    background: linear-gradient(to right, #6cff52, #3ec5ff);
+    background-clip: text;
+    color: transparent;
+}
+i{
+    color: white;
+    font-size: 2em;
+    display: none;
+}
+
+section{
+    min-height: 100vh;
+    padding: 5% 15%;
+}
+
+#homePage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: white;
+}
+#homePage img{
+    width: 20vw;
+    border-radius: 50%;
+    margin-top: 3em;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+    max-width: 600px;
+}
+.info-box h1{
+    font-size: 5em;
+    font-weight: 500;
+}
+
+.info-box h3{
+    font-size: 2em;
+    font-weight: 400;
+}
+.info-box p{
+    opacity: 0.7;
+}
+.btn{
+    padding: 0.5em 1em;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: white;
+    color: var(--background);
+}
+.btn-box{
+    display: flex;
+    gap: 1em;
+}
+.btn-box .btn:nth-of-type(2){
+    background-color: white;
+    color: var(--background);
+}
+.btn-box .btn:nth-of-type(2):hover{
+    background-color: var(--background);
+    color: white;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+    background-color: var(--background);
+}
+::-webkit-scrollbar-thumb{
+    background:radial-gradient(to bottom,#6cff52, #3ec5ff);
+}
+#academic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: white;
+}
+#academic h2{
+    font-size: 3em;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-bottom:1em ;
+}
+.qualification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: white;
+}
+.qualification img{
+    width: 80%;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+.details h3{
+    font-size: 5em;
+    font-weight: 500;
+}
+.details p{
+    opacity: 0.7;
+    text-align: center;
+}
+
+#skills{
+    background-color: var(--second-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+#skills img{
+    width: 30vw;
+    border-radius: 1em;
+}
+.skills-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2em;
+}
+.skills-box h1{
+    font-size: 5em;
+}
+.skills-box p{
+    color: white;
+    opacity: 0.8;
+}
+
+.skill{
+    display: flex;
+    text-align: left;
+    gap: 10em;
+}
+.skill ul{
+    font-size: 1.3em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    opacity: 0.8;
+    align-items: baseline;
+}
+.skill ul li span{
+    display: flex;
+    gap: 0.5em;
+    font-size: 1.2em;
+    transition: 0.3s ease-in-out;
+}
+.skill ul li:hover{
+    transform: translateX(10px);
+}
+.skill ul li i{
+    font-size: 1.2em;
+}
+.skills-box h2{
+    font-size: 2.5em;
+}
+
+#experience{
+    background-color: var(--background);
+}
+
+.header{
+    text-align: center;
+    font-size: 5em;
+    margin: 0.5em 0;
+}
+
+.experience-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 2em;
+}
+.box{
+    border: 3px solid rgb(49, 49, 49);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 2em;
+    gap: 2em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.box:hover{
+    border: 3PX solid rgb(100,100, 100);
+}
+.box p{
+    opacity: 0.8;
+}
+.box h1{
+    font-size: 2em;
+}
+.box img{
+    border-radius: 0.5em;
+    min-width: 25px;
+}
+
+#events{
+    background-color: var(--background);
+}
+#contact{
+    background-color: var(--background);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+form .input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1em;
+}
+
+form input{
+    font-size: 1.3em;
+    padding: 1em 5em;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+}
+form input:focus{
+    background: rgb(229, 229, 229);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    bottom: 0;
+    background-color: var(--background);
+    width: 100%;
+    padding: 5em 15%;
+}
+.col-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.col-box{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.col-box i{
+    font-size: 2em;
+}
+.col-box span{
+    font-size: 1.2em;
+}
+.col-right{
+    display: flex;
+    flex-direction: coulmn;
+    gap: 1em;
+    color: white;
+    max-width: 500px;
+}
+.col-right span{
+    font-size: 1.3em;
+}
+.col-right .social-icons{
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    gap: 1em;
+}
+.col-right .social-icons i{
+    font-size: 2em;
+    transition: 0.2 ease-in-out;
+    cursor: pointer;
+}
+
+#quiz-container {
+    background-color: var(--second-background);
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+.quiz-question h3 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    color: white;
+    background: linear-gradient(to right, #6cff52, #3ec5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 2em 0;
+}
+
+.quiz-options .btn {
+    padding: 0.8em;
+    font-size: 1.2em;
+    font-weight: 500;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.quiz-options .btn:hover {
+    background: linear-gradient(to right, #6cff52, #3ec5ff);
+    color: var(--background);
+    border-color: transparent;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(to right, #6cff52, #3ec5ff);
+    transition: width 0.4s ease-in-out;
+}
+
+#score-display {
+    margin-top: 2em;
+    text-align: center;
+}
+
+#score-display h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: white;
+}
+
+#score-display .btn {
+    background-color: white;
+    color: var(--background);
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    transition: 0.3s ease-in-out;
+}
+
+#score-display .btn:hover {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.results {
+    margin-top: 2em;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>quiz</title>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo"><span>mohaimen</span></a>
+        <ul class="links">
+            <a href="index.html">homePage</a>
+            <a href="academic.html">academic</a>
+            <a href="skills.html">skills</a>
+            <a href="exxperience.html">experience</a>
+            <a href="events.html">events</a>
+            <a href="subjects.html">subjects</a>
+            <a href="hobbies.html">hobbies</a>
+            <a href="quiz.html">quiz</a>
+            <a href="contact.html">contact</a>
+            <a href="testimoails.html">testimoails</a>
+        </ul>
+
+     <i class='bx bx-menu-alt-right'></i>
+    </nav>
+    <div class="qualification">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span><h1 class="text-center">Quiz Platform</h1></span>
+
+        
+        <div id="quiz-container">
+            <div class="quiz-question">
+                <span><h3 id="question">Question will appear here</h3></span>
+            </div>
+            <div class="quiz-options">
+                <button class="btn btn-primary" id="option-1">Option 1</button>
+                <button class="btn btn-primary" id="option-2">Option 2</button>
+                <button class="btn btn-primary" id="option-3">Option 3</button>
+                <button class="btn btn-primary" id="option-4">Option 4</button>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="my-3">
+                <div class="progress">
+                    <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <div id="score-display" class="d-none">
+             <h3>Your score: <span id="score">will apperar after complition</span></h3>
+             <button class="btn btn-success" onclick="location.reload()">Restart Quiz</button>
+            </div>
+            <div id="results-container" class="results"></div>
+
+
+        </div>
+    </div>
+
+
+ <script src="quiz.js"></script>
+</body>
+</html>
